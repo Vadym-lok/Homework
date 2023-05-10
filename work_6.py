@@ -1,6 +1,6 @@
 import math
-r = float(input())
-d = math.pi
-v = 4 / 3 * d * (r ** 3)
-print(round(v, 3))
+radius = float(input())
+number_pi = math.pi
+volume = 4 / 3 * number_pi * (radius ** 3)
+print(round(volume, 2))
 
