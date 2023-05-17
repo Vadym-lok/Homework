@@ -21,4 +21,3 @@ students = {
 change = students['Женя Курич']['Вік'] = 25
 number_of_students = len(students)
 print(number_of_students)
-git
