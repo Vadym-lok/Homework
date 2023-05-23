@@ -18,19 +18,23 @@ student = {
         'Номер телефону': '+380986671221',
         'Середній бал': 80
     },
+
+}
+add_student = {
     'Грицай Влад': {
         'Пошта': 'vlad.gad@gmail.com',
         'Вік': 25,
         'Номер телефону': '+38062716547',
         'Середній бал': 91
     }
-}
+    }
+all_student = {**student, **add_student}
 average_score = 0
-number_of_students = len(student)
-for value in student:
-    if student[value]['Номер телефону'] == None:
-        student[value]['Номер телефону'] = '102'
-    elif student[value]['Середній бал'] > 90:
-        pprint(f" {value} Середній бал {student[value]['Середній бал']} ")
-    average_score += student[value]['Середній бал'] / number_of_students
+number_of_students = len(all_student)
+for value in all_student:
+    if all_student[value]['Номер телефону'] == None:
+        all_student[value]['Номер телефону'] = '102'
+    if all_student[value]['Середній бал'] > 90:
+        pprint(f" {value} Середній бал {all_student[value]['Середній бал']} ")
+    average_score += all_student[value]['Середній бал'] / number_of_students
 pprint(average_score)
