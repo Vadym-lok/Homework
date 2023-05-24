@@ -9,12 +9,12 @@ number_of_people = 0
 for value in data['users']:
     products = value.get('hair')
     data_age = value.get('age')
-    city_value = value.get('city')
+    city_value = value.get('address')
     if products['color'] == 'Brown':
         number_of_people += 1
         general_age += data_age
         average_age = round(general_age / number_of_people, 1)
-    # if city_value == 'Louisville':
-    #     pprint(data)
-pprint(average_age)
+    if city_value['city'] == 'Louisville':
+        pprint(city_value)
 
+pprint(average_age)
