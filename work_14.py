@@ -1,14 +1,18 @@
-# def gets_a_number_joke():
-#     users_numbers = int(input('enter a number: '))
+# from typing import Any
+#
+#
+# def gets_a_number_joke(users_numbers: Any) -> str:
 #     if users_numbers == 1:
-#         return print('анекдот про школу')
+#         return 'анекдот про школу'
 #     elif users_numbers == 2:
-#         return print('анекдот про рибака')
+#         return 'анекдот про рибака'
 #     else:
-#         return print('анекдот про кота')
+#         return 'анекдот про кота'
 #
-#
-# gets_a_number_jok
+# users_numbers = input('enter a number: ')
+# print(gets_a_number_joke(users_numbers))
+
+
 # def length_and_width_of_the_rectangle(length_rectangle: int | float, width_rectangle: int | float) -> float:
 #     perimeter = length_rectangle + width_rectangle
 #     return float(perimeter)
@@ -28,16 +32,16 @@
 #
 # string = input().lower()
 # print(string_replace(string))
-clearing_letters = ''
-
-
-def string_replace(string: str, string_2: str) -> str:
-    for value in string_2:
-        string = string.replace(value.lower(), '')
-        string = string.replace(value.upper(), '')
-    return print(string)
-
-
-string = input().lower()
-string_2 = input().lower()
-string_replace(string, string_2)
+# clearing_letters = ''
+#
+#
+# def string_replace(string: str, string_2: str) -> str:
+#     for value in string_2:
+#         string = string.replace(value.lower(), '')
+#         string = string.replace(value.upper(), '')
+#     return string
+#
+#
+# string = 'хижак'
+# string_2 = 'вікно'
+# print(string_replace(string, string_2))
