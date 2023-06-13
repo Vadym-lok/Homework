@@ -1,13 +1,13 @@
 def decorator_str(func):
-    def decorator_inside(value):
-        data = func(value)
+    def result_string(*args, **kwargs):
+        data = func(*args, **kwargs)
         if data == str(data):
             result = '<b>' + data + '</b>'
             return result
         else:
             return data
 
-    return decorator_inside
+    return result_string
 
 
 @decorator_str
